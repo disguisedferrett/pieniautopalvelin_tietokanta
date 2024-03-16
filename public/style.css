@@ -1,0 +1,44 @@
+#content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+#viereen, #inputit {
+    flex: 1;
+}
+
+h1{
+    text-align: center;
+}
+
+#lista ul li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    
+}
+
+a{
+    color: chocolate;
+    text-decoration: none;
+    text-align: center;
+}
+
+body{
+    background-color: white;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

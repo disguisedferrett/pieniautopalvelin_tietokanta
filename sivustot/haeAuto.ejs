@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakutulos</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <h1>Hakutulos:</h1>
+
+    <table>
+
+        <tr>
+            <th>id</th>
+            <th>merkki</th>
+            <th>malli</th>
+            <th>vuosimalli</th>
+            <th>omistaja</th>
+
+
+            <tbody id="autotTable">
+
+                <% if (data.length> 0) { %>
+                    <% data.forEach(pieniauto=> { %>
+                        <tr>
+                            <td>
+                                <%= pieniauto.id %>
+                                
+                            </td>
+
+                            <td>
+                                <%= pieniauto.merkki %>
+                            </td>
+                            <td>
+                                <%= pieniauto.malli %>
+                            </td>
+                            <td>
+                                <%= pieniauto.vuosimalli %>
+                            </td>
+                            <td>
+                                <%= pieniauto.omistaja %>
+                            </td>
+
+                        </tr>
+                    <% }); %>   
+                             
+                <% } %>
+        </tr>
+
+    </table>
+</body>
+
+</html>
